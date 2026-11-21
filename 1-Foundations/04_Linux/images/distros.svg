@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="1" y="1" width="998" height="418" rx="18" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="500" y="46" text-anchor="middle" font-size="24" font-weight="700" fill="#0f172a">Popular Linux Distributions</text>
+
+  <!-- General -->
+  <rect x="20" y="75" width="180" height="62" rx="12" fill="#f97316"/>
+  <text x="110" y="102" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">General Purpose</text>
+  <text x="110" y="123" text-anchor="middle" font-size="12" fill="#ffedd5">desktops &amp; laptops</text>
+  <g font-size="15" font-weight="600" fill="#7c2d12" text-anchor="middle">
+    <rect x="35" y="155" width="150" height="38" rx="19" fill="#ffedd5" stroke="#f97316"/><text x="110" y="179">Ubuntu</text>
+    <rect x="35" y="205" width="150" height="38" rx="19" fill="#ffedd5" stroke="#f97316"/><text x="110" y="229">Linux Mint</text>
+    <rect x="35" y="255" width="150" height="38" rx="19" fill="#ffedd5" stroke="#f97316"/><text x="110" y="279">Fedora</text>
+  </g>
+
+  <!-- Enterprise -->
+  <rect x="215" y="75" width="180" height="62" rx="12" fill="#dc2626"/>
+  <text x="305" y="102" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">Enterprise Servers</text>
+  <text x="305" y="123" text-anchor="middle" font-size="12" fill="#fee2e2">paid support</text>
+  <g font-size="15" font-weight="600" fill="#7f1d1d" text-anchor="middle">
+    <rect x="230" y="155" width="150" height="38" rx="19" fill="#fee2e2" stroke="#dc2626"/><text x="305" y="179">RHEL</text>
+    <rect x="230" y="205" width="150" height="38" rx="19" fill="#fee2e2" stroke="#dc2626"/><text x="305" y="229">SUSE</text>
+    <rect x="230" y="255" width="150" height="38" rx="19" fill="#fee2e2" stroke="#dc2626"/><text x="305" y="279">Oracle Linux</text>
+    <rect x="230" y="305" width="150" height="38" rx="19" fill="#fee2e2" stroke="#dc2626"/><text x="305" y="329">Amazon Linux</text>
+  </g>
+
+  <!-- Community -->
+  <rect x="410" y="75" width="180" height="62" rx="12" fill="#2563eb"/>
+  <text x="500" y="102" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">Community Servers</text>
+  <text x="500" y="123" text-anchor="middle" font-size="12" fill="#dbeafe">free, RHEL-compatible</text>
+  <g font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">
+    <rect x="425" y="155" width="150" height="38" rx="19" fill="#dbeafe" stroke="#2563eb"/><text x="500" y="179">CentOS</text>
+    <rect x="425" y="205" width="150" height="38" rx="19" fill="#dbeafe" stroke="#2563eb"/><text x="500" y="229">AlmaLinux</text>
+    <rect x="425" y="255" width="150" height="38" rx="19" fill="#dbeafe" stroke="#2563eb"/><text x="500" y="279">Rocky Linux</text>
+  </g>
+
+  <!-- Security -->
+  <rect x="605" y="75" width="180" height="62" rx="12" fill="#1e293b"/>
+  <text x="695" y="102" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">Security Testing</text>
+  <text x="695" y="123" text-anchor="middle" font-size="12" fill="#cbd5e1">penetration testing</text>
+  <g font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">
+    <rect x="620" y="155" width="150" height="38" rx="19" fill="#e2e8f0" stroke="#1e293b"/><text x="695" y="179">Kali Linux</text>
+    <rect x="620" y="205" width="150" height="38" rx="19" fill="#e2e8f0" stroke="#1e293b"/><text x="695" y="229">Parrot OS</text>
+  </g>
+
+  <!-- Lightweight -->
+  <rect x="800" y="75" width="180" height="62" rx="12" fill="#0d9488"/>
+  <text x="890" y="102" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">Lightweight</text>
+  <text x="890" y="123" text-anchor="middle" font-size="12" fill="#ccfbf1">containers, old PCs</text>
+  <g font-size="15" font-weight="600" fill="#134e4a" text-anchor="middle">
+    <rect x="815" y="155" width="150" height="38" rx="19" fill="#ccfbf1" stroke="#0d9488"/><text x="890" y="179">Alpine</text>
+    <rect x="815" y="205" width="150" height="38" rx="19" fill="#ccfbf1" stroke="#0d9488"/><text x="890" y="229">Debian Slim</text>
+    <rect x="815" y="255" width="150" height="38" rx="19" fill="#ccfbf1" stroke="#0d9488"/><text x="890" y="279">Puppy Linux</text>
+  </g>
+
+  <rect x="150" y="368" width="700" height="34" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="500" y="390" text-anchor="middle" font-size="13" fill="#475569">Tip: Bookworm (Debian 12) and Trixie (Debian 13) are Debian release codenames, e.g. debian:bookworm-slim</text>
+</svg>

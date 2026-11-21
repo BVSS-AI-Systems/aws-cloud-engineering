@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="340" viewBox="0 0 1000 340" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="1" y="1" width="998" height="338" rx="18" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="500" y="44" text-anchor="middle" font-size="24" font-weight="700" fill="#0f172a">Runlevels &amp; systemd Targets</text>
+
+  <g text-anchor="middle">
+    <rect x="12" y="72" width="130" height="170" rx="14" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="77" y="118" font-size="40" font-weight="800" fill="#dc2626">0</text>
+    <text x="77" y="148" font-size="16" font-weight="700" fill="#7f1d1d">Shutdown</text>
+    <text x="77" y="200" font-size="13" font-family="Consolas, Menlo, monospace" fill="#334155">init 0</text>
+    <text x="77" y="225" font-size="11" font-family="Consolas, Menlo, monospace" fill="#64748b">poweroff.target</text>
+
+    <rect x="151" y="72" width="130" height="170" rx="14" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+    <text x="216" y="118" font-size="40" font-weight="800" fill="#ea580c">1</text>
+    <text x="216" y="148" font-size="16" font-weight="700" fill="#7c2d12">Single-user</text>
+    <text x="216" y="168" font-size="13" fill="#7c2d12">for repairs</text>
+    <text x="216" y="200" font-size="13" font-family="Consolas, Menlo, monospace" fill="#334155">init 1</text>
+    <text x="216" y="225" font-size="11" font-family="Consolas, Menlo, monospace" fill="#64748b">rescue.target</text>
+
+    <rect x="290" y="72" width="130" height="170" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="355" y="118" font-size="40" font-weight="800" fill="#2563eb">2</text>
+    <text x="355" y="148" font-size="16" font-weight="700" fill="#1e3a8a">Multi-user</text>
+    <text x="355" y="168" font-size="13" fill="#1e3a8a">no network · CLI</text>
+    <text x="355" y="200" font-size="13" font-family="Consolas, Menlo, monospace" fill="#334155">init 2</text>
+
+    <rect x="429" y="72" width="130" height="170" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+    <text x="494" y="118" font-size="40" font-weight="800" fill="#2563eb">3</text>
+    <text x="494" y="148" font-size="16" font-weight="700" fill="#1e3a8a">Multi-user</text>
+    <text x="494" y="168" font-size="13" fill="#1e3a8a">network · CLI</text>
+    <text x="494" y="200" font-size="13" font-family="Consolas, Menlo, monospace" fill="#334155">init 3</text>
+
+    <rect x="568" y="72" width="130" height="170" rx="14" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="633" y="118" font-size="40" font-weight="800" fill="#94a3b8">4</text>
+    <text x="633" y="148" font-size="16" font-weight="700" fill="#475569">Unused</text>
+    <text x="633" y="168" font-size="13" fill="#475569">by default</text>
+    <text x="633" y="200" font-size="13" font-family="Consolas, Menlo, monospace" fill="#334155">init 4</text>
+
+    <rect x="707" y="72" width="130" height="170" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="772" y="118" font-size="40" font-weight="800" fill="#16a34a">5</text>
+    <text x="772" y="148" font-size="16" font-weight="700" fill="#14532d">Full Desktop</text>
+    <text x="772" y="168" font-size="13" fill="#14532d">GUI</text>
+    <text x="772" y="200" font-size="13" font-family="Consolas, Menlo, monospace" fill="#334155">init 5</text>
+    <text x="772" y="225" font-size="11" font-family="Consolas, Menlo, monospace" fill="#64748b">graphical.target</text>
+
+    <rect x="846" y="72" width="140" height="170" rx="14" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="916" y="118" font-size="40" font-weight="800" fill="#dc2626">6</text>
+    <text x="916" y="148" font-size="16" font-weight="700" fill="#7f1d1d">Reboot</text>
+    <text x="916" y="200" font-size="13" font-family="Consolas, Menlo, monospace" fill="#334155">init 6</text>
+    <text x="916" y="225" font-size="11" font-family="Consolas, Menlo, monospace" fill="#64748b">reboot.target</text>
+  </g>
+
+  <!-- bracket for 2,3,4 -->
+  <path d="M300 252 L300 264 L688 264 L688 252" fill="none" stroke="#2563eb" stroke-width="2"/>
+  <line x1="494" y1="264" x2="494" y2="276" stroke="#2563eb" stroke-width="2"/>
+  <rect x="404" y="276" width="180" height="30" rx="15" fill="#2563eb"/>
+  <text x="494" y="296" text-anchor="middle" font-size="13" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#fff">multi-user.target</text>
+  <text x="500" y="327" text-anchor="middle" font-size="12" fill="#64748b">On modern systemd distros, runlevels 2, 3 and 4 all map to multi-user.target</text>
+</svg>

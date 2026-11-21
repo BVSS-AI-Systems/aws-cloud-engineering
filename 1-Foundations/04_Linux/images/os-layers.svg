@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker>
+  </defs>
+  <rect x="1" y="1" width="898" height="438" rx="18" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="450" y="46" text-anchor="middle" font-size="24" font-weight="700" fill="#0f172a">Where the Operating System Sits</text>
+
+  <rect x="170" y="78" width="560" height="62" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="450" y="106" text-anchor="middle" font-size="20" font-weight="700" fill="#1e3a8a">User</text>
+  <text x="450" y="128" text-anchor="middle" font-size="14" fill="#1e40af">us: typing, clicking, running commands</text>
+
+  <rect x="170" y="164" width="560" height="62" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="450" y="192" text-anchor="middle" font-size="20" font-weight="700" fill="#14532d">Applications</text>
+  <text x="450" y="214" text-anchor="middle" font-size="14" fill="#166534">browser, editor, terminal, games</text>
+
+  <rect x="170" y="250" width="560" height="62" rx="12" fill="#fde68a" stroke="#ca8a04" stroke-width="2.5"/>
+  <text x="450" y="278" text-anchor="middle" font-size="20" font-weight="700" fill="#713f12">Operating System (Linux)</text>
+  <text x="450" y="300" text-anchor="middle" font-size="14" fill="#854d0e">manages CPU, memory, files, devices and users</text>
+
+  <rect x="170" y="336" width="560" height="62" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+  <text x="450" y="364" text-anchor="middle" font-size="20" font-weight="700" fill="#1e293b">Hardware</text>
+  <text x="450" y="386" text-anchor="middle" font-size="14" fill="#334155">CPU · RAM · Disk · Network card</text>
+
+  <line x1="450" y1="142" x2="450" y2="161" stroke="#64748b" stroke-width="2.5" marker-start="url(#a)" marker-end="url(#a)"/>
+  <line x1="450" y1="228" x2="450" y2="247" stroke="#64748b" stroke-width="2.5" marker-start="url(#a)" marker-end="url(#a)"/>
+  <line x1="450" y1="314" x2="450" y2="333" stroke="#64748b" stroke-width="2.5" marker-start="url(#a)" marker-end="url(#a)"/>
+
+  <text x="755" y="285" font-size="14" font-style="italic" fill="#854d0e">the middle-man</text>
+  <text x="145" y="372" text-anchor="end" font-size="13" font-style="italic" fill="#475569">no OS =</text>
+  <text x="145" y="390" text-anchor="end" font-size="13" font-style="italic" fill="#475569">just metal</text>
+  <text x="450" y="426" text-anchor="middle" font-size="13" fill="#64748b">The OS sits between us and the hardware</text>
+</svg>

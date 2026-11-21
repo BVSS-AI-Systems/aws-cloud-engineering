@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="830" viewBox="0 0 900 830" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker>
+  </defs>
+  <rect x="1" y="1" width="898" height="828" rx="18" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="450" y="44" text-anchor="middle" font-size="24" font-weight="700" fill="#0f172a">How Linux Boots</text>
+
+  <rect x="370" y="62" width="160" height="38" rx="19" fill="#ef4444"/>
+  <text x="450" y="87" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">Power ON</text>
+  <line x1="450" y1="100" x2="450" y2="116" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <!-- Step 1 -->
+  <rect x="60" y="122" width="780" height="110" rx="14" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <circle cx="110" cy="177" r="28" fill="#ef4444"/><text x="110" y="186" text-anchor="middle" font-size="26" font-weight="700" fill="#fff">1</text>
+  <text x="160" y="160" font-size="20" font-weight="700" fill="#7f1d1d">Hardware Initialisation</text>
+  <text x="160" y="187" font-size="15" fill="#334155">• POST (Power-On Self-Test) checks RAM, CPU and storage</text>
+  <text x="160" y="211" font-size="15" fill="#334155">• Picks the primary boot device from the boot order</text>
+  <rect x="670" y="140" width="150" height="30" rx="15" fill="#ef4444"/><text x="745" y="160" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">BIOS (old) / UEFI (new)</text>
+  <line x1="450" y1="232" x2="450" y2="250" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <!-- Step 2 -->
+  <rect x="60" y="256" width="780" height="110" rx="14" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+  <circle cx="110" cy="311" r="28" fill="#f97316"/><text x="110" y="320" text-anchor="middle" font-size="26" font-weight="700" fill="#fff">2</text>
+  <text x="160" y="294" font-size="20" font-weight="700" fill="#7c2d12">Boot Sector</text>
+  <text x="160" y="321" font-size="15" fill="#334155">• Firmware reads the disk partition layout for what to run</text>
+  <text x="160" y="345" font-size="15" fill="#334155">• Finds and starts the boot loader</text>
+  <rect x="670" y="274" width="150" height="30" rx="15" fill="#f97316"/><text x="745" y="294" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">MBR / EFI partition</text>
+  <line x1="450" y1="366" x2="450" y2="384" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <!-- Step 3 -->
+  <rect x="60" y="390" width="780" height="110" rx="14" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+  <circle cx="110" cy="445" r="28" fill="#ca8a04"/><text x="110" y="454" text-anchor="middle" font-size="26" font-weight="700" fill="#fff">3</text>
+  <text x="160" y="428" font-size="20" font-weight="700" fill="#713f12">Boot Loader</text>
+  <text x="160" y="455" font-size="15" fill="#334155">• Shows a menu to pick an OS / kernel (uses the default if none)</text>
+  <text x="160" y="479" font-size="15" fill="#334155">• Loads <tspan font-family="Consolas, Menlo, monospace" fill="#a16207">/boot/vmlinuz-*</tspan> and <tspan font-family="Consolas, Menlo, monospace" fill="#a16207">/boot/initramfs-*</tspan> into memory</text>
+  <rect x="670" y="408" width="150" height="30" rx="15" fill="#ca8a04"/><text x="745" y="428" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">GRUB2</text>
+  <line x1="450" y1="500" x2="450" y2="518" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <!-- Step 4 -->
+  <rect x="60" y="524" width="780" height="110" rx="14" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <circle cx="110" cy="579" r="28" fill="#16a34a"/><text x="110" y="588" text-anchor="middle" font-size="26" font-weight="700" fill="#fff">4</text>
+  <text x="160" y="562" font-size="20" font-weight="700" fill="#14532d">Linux Kernel</text>
+  <text x="160" y="589" font-size="15" fill="#334155">• Bridge / translator between software and hardware</text>
+  <text x="160" y="613" font-size="15" fill="#334155">• Detects hardware, loads drivers, mounts root file system at /</text>
+  <rect x="670" y="542" width="150" height="30" rx="15" fill="#16a34a"/><text x="745" y="562" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">heart of the OS</text>
+  <line x1="450" y1="634" x2="450" y2="652" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <!-- Step 5 -->
+  <rect x="60" y="658" width="780" height="110" rx="14" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <circle cx="110" cy="713" r="28" fill="#2563eb"/><text x="110" y="722" text-anchor="middle" font-size="26" font-weight="700" fill="#fff">5</text>
+  <text x="160" y="696" font-size="20" font-weight="700" fill="#1e3a8a">init System</text>
+  <text x="160" y="723" font-size="15" fill="#334155">• Kernel starts systemd as the very first process (PID 1)</text>
+  <text x="160" y="747" font-size="15" fill="#334155">• systemd starts services, then shows the login prompt</text>
+  <rect x="670" y="676" width="150" height="30" rx="15" fill="#2563eb"/><text x="745" y="696" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">systemd · PID 1</text>
+  <line x1="450" y1="768" x2="450" y2="782" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <rect x="360" y="786" width="180" height="36" rx="18" fill="#16a34a"/>
+  <text x="450" y="810" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">Login prompt</text>
+</svg>
